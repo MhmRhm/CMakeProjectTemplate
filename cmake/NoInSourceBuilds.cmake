@@ -2,7 +2,7 @@ file(TO_CMAKE_PATH "${PROJECT_BINARY_DIR}/" WhereBinIs)
 file(TO_CMAKE_PATH "${PROJECT_SOURCE_DIR}/" WhereSrcIs)
 string(FIND "${WhereBinIs}/" "${WhereSrcIs}/" FoundInSource)
 
-if(NOT(FoundInSource EQUAL -1))
+if(FoundInSource EQUAL 0)
 	message(FATAL_ERROR
         "\nIn-source builds are not allowed."
         "Instead, provide a path to build tree outside the source directory like so:\n"
