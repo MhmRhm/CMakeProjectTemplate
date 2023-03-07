@@ -1,6 +1,7 @@
 add_library(infrastructure_obj OBJECT infrastructure.cpp)
 target_compile_options(infrastructure_obj
-	PRIVATE -Wall -Wextra -Werror
+	PRIVATE "${DEFAULT_CXX_COMPILE_FLAGS}"
+	PRIVATE "${DEFAULT_CXX_OPTIMIZE_FLAG}"
 )
 target_include_directories(infrastructure_obj INTERFACE
 	"$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"

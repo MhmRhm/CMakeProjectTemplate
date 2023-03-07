@@ -7,7 +7,7 @@ set(MY_PACKAGE_NAME "MyProject")
 project(${MY_PROJECT_NAME} VERSION 0.0.0 LANGUAGES CXX)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
-include(CompilerLinker)
+include(EnableIPOSupport)
 include(NoInSourceBuilds)
 
 add_subdirectory(src bin)
