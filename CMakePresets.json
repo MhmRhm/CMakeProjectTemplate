@@ -72,7 +72,7 @@
       },
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/../${sourceDirName}-install-${presetName}",
-        "CPPCHECK_PATH": "C:/Program Files/Cppcheck/",
+        "CPPCHECK_INSTALL_DIR": "C:\\Program Files\\Cppcheck",
         "DEFAULT_CXX_OPTIMIZE_FLAG": "/O2"
       },
       "vendor": {
