@@ -31,7 +31,7 @@
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/../${sourceDirName}-install-${presetName}",
         "CPPCHECK_PATH": "C:/Program Files/Cppcheck/",
-        "DEFAULT_CXX_COMPILE_FLAGS": "/W4 /Wall /WX /EHsc",
+        "DEFAULT_CXX_COMPILE_FLAGS": "/W4;/Wall;/WX;/EHsc",
         "DEFAULT_CXX_OPTIMIZE_FLAG": "/Od"
       },
       "vendor": {
@@ -48,8 +48,8 @@
       "binaryDir": "${sourceDir}/../${sourceDirName}-build-${presetName}",
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/../${sourceDirName}-install-${presetName}",
-        "DEFAULT_CXX_COMPILE_FLAGS": "-Wextra -Wall -Wfloat-equal -Wundef -Wpointer-arith -Wshadow -Wcast-align -Wswitch-default -Wswitch-enum -Wconversion -Wunreachable-code -pedantic -Werror",
-        "DEFAULT_CXX_OPTIMIZE_FLAG": "/O0"
+        "DEFAULT_CXX_COMPILE_FLAGS": "-Wextra;-Wall;-Wfloat-equal;-Wundef;-Wpointer-arith;-Wshadow;-Wcast-align;-Wswitch-default;-Wswitch-enum;-Wconversion;-Wpedantic;-Werror",
+        "DEFAULT_CXX_OPTIMIZE_FLAG": "-O0"
       },
       "vendor": {
         "microsoft.com/VisualStudioSettings/CMake/1.0": {
@@ -89,7 +89,7 @@
       "binaryDir": "${sourceDir}/../${sourceDirName}-build-${presetName}",
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/../${sourceDirName}-install-${presetName}",
-        "DEFAULT_CXX_OPTIMIZE_FLAG": "/O3"
+        "DEFAULT_CXX_OPTIMIZE_FLAG": "-O3"
       },
       "vendor": {
         "microsoft.com/VisualStudioSettings/CMake/1.0": {
