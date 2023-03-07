@@ -31,7 +31,7 @@
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/../${sourceDirName}-install-${presetName}",
         "CPPCHECK_INSTALL_DIR": "C:\\Program Files\\Cppcheck",
-        "DEFAULT_CXX_COMPILE_FLAGS": "/W4;/Wall;/WX;/EHsc",
+        "DEFAULT_CXX_COMPILE_FLAGS": "/W4;/Wall;/WX;/EHsc;/wd4668",
         "DEFAULT_CXX_OPTIMIZE_FLAG": "/Od"
       },
       "vendor": {
