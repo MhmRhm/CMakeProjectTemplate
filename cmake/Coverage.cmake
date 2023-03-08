@@ -6,9 +6,10 @@ function(EnableCoverage target)
 endfunction()
 
 function(CleanCoverage target)
-    add_custom_command(TARGET ${target} PRE_BUILD COMMAND
-        find ${CMAKE_BINARY_DIR} -type f
-        -name '*.gcda' -exec rm {} +)
+    add_custom_command(TARGET ${target} PRE_BUILD
+    COMMAND "$<$<PLATFORM_ID:UNIX>:find ${CMAKE_BINARY_DIR} -type f -name '*.gcda' -exec rm {} +>"
+            "<$<PLATFORM_ID:WIN32>:(ls -Path ${CMAKE_BINARY_DIR} -Filter *.gcda -Recurse).FullName | ForEach-Object -Process {del $_}>"
+    )
 endfunction()
 
 function(AddCoverage target)
