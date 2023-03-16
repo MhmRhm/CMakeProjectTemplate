@@ -15,3 +15,8 @@ cmake -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -B ../build-gcc-debug -S .
 cmake --build ../build-gcc-debug
 cmake --build ../build-llvm-debug
 ```
+- You can also use presets provided with the project in `CMakePresets.json`. Your [IDE](https://learn.microsoft.com/en-us/cpp/build/cmake-presets-vs?view=msvc-170#configure) should support that or:
+
+```bash
+cmake --preset <configurePreset>
+```
