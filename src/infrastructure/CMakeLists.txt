@@ -1,4 +1,6 @@
-add_library(infrastructure_obj OBJECT infrastructure.cpp)
+add_library(infrastructure_obj OBJECT
+	infrastructure.cpp
+)
 target_compile_options(infrastructure_obj
 	PRIVATE ${DEFAULT_CXX_COMPILE_FLAGS}
 	PRIVATE ${DEFAULT_CXX_OPTIMIZE_FLAG}
@@ -11,7 +13,7 @@ set_target_properties(infrastructure_obj PROPERTIES
     PUBLIC_HEADER src/infrastructure/include/infrastructure/infrastructure.h
     POSITION_INDEPENDENT_CODE 1
 )
-AddPrecompiledHeaders(infrastructure_obj)
+target_link_libraries(infrastructure_obj PRIVATE precompiled)
 BuildInfo(infrastructure_obj)
 
 add_library(infrastructure_shared SHARED)
