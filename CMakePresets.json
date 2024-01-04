@@ -112,7 +112,12 @@
   ],
   "buildPresets": [
       {
+        "name": "base",
+        "jobs": 10
+      },
+      {
           "name": "windows-default-debug",
+          "inherits": ["base"],
           "displayName": "Windows Debug",
           "description": "debug build type",
           "configurePreset": "windows-default-debug",
@@ -120,6 +125,7 @@
       },
       {
           "name": "linux-default-debug",
+          "inherits": ["base"],
           "displayName": "Linux Debug",
           "description": "debug build type",
           "configurePreset": "linux-default-debug",
@@ -127,6 +133,7 @@
       },
       {
           "name": "windows-default-release",
+          "inherits": ["base"],
           "displayName": "Windows Release",
           "description": "release build type",
           "configurePreset": "windows-default-release",
@@ -134,6 +141,7 @@
       },
       {
           "name": "linux-default-release",
+          "inherits": ["base"],
           "displayName": "Linux Release",
           "description": "release build type",
           "configurePreset": "linux-default-release",
