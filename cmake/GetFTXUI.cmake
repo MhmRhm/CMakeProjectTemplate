@@ -2,7 +2,8 @@ include(FetchContent)
 
 FetchContent_Declare(ftxui
 	GIT_REPOSITORY https://github.com/ArthurSonzogni/ftxui
-	GIT_TAG v3.0.0
+	GIT_TAG v5.0.0
+	GIT_SHALLOW 1
 )
 
 option(FTXUI_BUILD_DOCS "Set to ON to build docs" OFF)
