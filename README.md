@@ -1,4 +1,7 @@
 # The CMakeProjectTemplate
+
+Notice: See the upgraded version at [SeeMake](https://github.com/MhmRhm/SeeMake).
+
 A well-structured modern cmake template for new projects providing testing with coverage, formatting along cppcheck, benchmarking, documentation generation, and more.
 
 The contents of `./.devcontainer` are used to create a cross-platform containerized development environment using the provided `Dockerfile`. If you are using vscode, look into *Remote Development* extension.
